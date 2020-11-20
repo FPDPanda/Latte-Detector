@@ -9,8 +9,8 @@
 
 html,
 body{
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
 }
 
 /*Colocando o background do site branco e o "main" (caixa azul) no meio*/
@@ -27,7 +27,7 @@ main {
     height: 80vh;
     width: 80vw;
 
-    background-color: #1480fb;
+    background-color: #85bcfb;
     border-radius: 2rem;
     box-shadow: 0.5vw 1vh 45px #000;
 }
