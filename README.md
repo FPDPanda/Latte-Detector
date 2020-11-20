@@ -7,6 +7,7 @@ LINK: https://fpdpanda.github.io/Latte-Detector/
 # Idéias (Coisas que eu queria fazer mas não consegui)
 - Separar os botões em 3 grupos e conseguir de alguma forma deixar selecionado um botão de cada grupo
 - Uma mensagem em algum lugar falando quais botões já foram selecionados (que mude sempre que a pessoa clique em outro da mesma categoria)
+- Adaptar pra telas diferentes e pra mobile (que tá uma tristeza)
 
 # Um projeto em equipe
 Toda experiência para trabalhar com outras pessoas é bem-vinda, então se você tem alguma idéia, se quer desenvolver esse programinha ou criar outro, ou até se quiser só bater um papo, me chama lá no slack da Experiência - Kenzie 
