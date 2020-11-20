@@ -83,12 +83,13 @@ main button:hover {
 }
 
 @media(max-width: 800px) {
+    html,
     main {
-        height: 100%;
+        height: auto;
         width: 100%;
 
         border-radius: 0;
-        box-shadow: 0;
+        box-shadow: none;
     }
 
     .latte-buttons,
@@ -97,10 +98,12 @@ main button:hover {
     flex-direction: column;
     margin-top: 0.3vh;
     }
+    
     main button {
         margin-top: 2vh;
         width: 100%;
     }
+
     main h2 {
         margin-top: 3vh;
     }
