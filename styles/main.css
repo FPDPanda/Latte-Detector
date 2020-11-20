@@ -25,7 +25,7 @@ body {
 /*Estilizando a caixa*/
 main {
     height: 80vh;
-    width: 70vw;
+    width: 80vw;
 
     background-color: #1480fb;
     border-radius: 2rem;
@@ -80,4 +80,26 @@ main button:hover {
 .espresso-buttons button:focus,
 .chocolate-buttons button:focus {
     background-color: #5ccea2
+}
+
+@media(max-width: 1000px) {
+    main {
+        width: 90vw;    
+    }
+}
+
+@media(max-width: 800px) {
+    main {
+        height: 100vh;
+    }
+
+    .latte-buttons,
+    .espresso-buttons,
+    .chocolate-buttons {
+    flex-direction: column;
+    }
+    main button {
+        margin-top: 1vh;
+        width: 100%;
+    }
 }
