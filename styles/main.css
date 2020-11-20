@@ -9,8 +9,8 @@
 
 html,
 body{
-    height: 100vh;
-    width: 100vw;
+    height: auto;
+    width: auto;
 }
 
 /*Colocando o background do site branco e o "main" (caixa azul) no meio*/
@@ -84,10 +84,11 @@ main button:hover {
 
 @media(max-width: 800px) {
     main {
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
 
         border-radius: 0;
+        box-shadow: 0;
     }
 
     .latte-buttons,
@@ -97,7 +98,14 @@ main button:hover {
     margin-top: 0.3vh;
     }
     main button {
-        margin-top: 1vh;
+        margin-top: 2vh;
         width: 100%;
+    }
+    main h2 {
+        margin-top: 3vh;
+    }
+
+    #last-button {
+        margin-bottom: 7vh;
     }
 }
