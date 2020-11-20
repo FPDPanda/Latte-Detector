@@ -1,0 +1,83 @@
+/*Essa é a estilização do site, as cores, bordas, fontes, tamanhos, posição dos items, vem tudo daqui*/
+
+/*Resetando padrões de navegador */
+* {
+    margin: 0;
+    padding: 0;
+    font: 16px sans-serif;
+}
+
+html,
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+/*Colocando o background do site branco e o "main" (caixa azul) no meio*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+}
+
+/*Estilizando a caixa*/
+main {
+    height: 80vh;
+    width: 70vw;
+
+    background-color: #1480fb;
+    border-radius: 2rem;
+    box-shadow: 0.5vw 1vh 45px #000;
+}
+
+main h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px #fff;
+    margin-top: 3vh;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+/*Estilizando o ESPAÇO onde os botões vão ficar*/
+.latte-buttons,
+.espresso-buttons,
+.chocolate-buttons {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-top: 3vh;
+}
+
+/*Estilizando os botões*/
+main button {
+    text-align: center;
+
+    border: 2px solid rgb(0, 98, 98);
+    border-radius: 20px;
+
+
+    width: 14vw;
+    height: 6vh;
+}
+
+/*Isso faz com que o botão mude de cor quando se coloca a seta em cima*/
+main button:hover {
+    background-color: #5ccea2;
+}
+
+/*Isso faz com que o botão fique com um background diferente (cor de fundo) quando se clica nele*/
+.latte-buttons button:focus,
+.espresso-buttons button:focus,
+.chocolate-buttons button:focus {
+    background-color: #5ccea2
+}
