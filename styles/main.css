@@ -62,6 +62,7 @@ main h2 {
 main button {
     text-align: center;
 
+    background-color: #ccc;
     border: 2px solid rgb(0, 98, 98);
     border-radius: 20px;
 
