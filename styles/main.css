@@ -91,6 +91,7 @@ main button:hover {
     .espresso-buttons,
     .chocolate-buttons {
     flex-direction: column;
+    margin-top: 0.3vh;
     }
     main button {
         margin-top: 1vh;
