@@ -12,21 +12,21 @@
 
         <h2>What kind of milk are you adding to your latte?</h2>
         <div class="latte-buttons">
-            <button onclick="selectedMilk('dairyMilk')">Dairy Milk</button>
-            <button onclick="selectedMilk('soyMilk')">Soy Milk</button>
-            <button onclick="selectedMilk('cream')">Cream</button>
+            <button onclick="latte.selectMilk('Dairy Milk')">Dairy Milk</button>
+            <button onclick="latte.selectMilk('Soy Milk')">Soy Milk</button>
+            <button onclick="latte.selectMilk('Cream')">Cream</button>
         </div>
 
         <h2>What kind of espresso are you adding to your latte?</h2>
         <div class="espresso-buttons" radio="espresso">
-            <button onclick="selectedEspresso('caffeinatedEspresso')">Caffeinated</button>
-            <button onclick="selectedEspresso('decafEspresso')">Decaf</button>
+            <button onclick="latte.selectEspresso('Caffeinated Espresso')">Caffeinated</button>
+            <button onclick="latte.selectEspresso('Decaf Espresso')">Decaf</button>
         </div>
 
         <h2>Are you adding chocolate as well?</h2>
         <div class="chocolate-buttons" radio="chocolate">
-            <button onclick=chocolate()>Milk Chocolate</button>
-            <button id="last-button" onclick=chocolate()>Dark Chocolate</button>
+            <button onclick=latte.chocolate()>Milk Chocolate</button>
+            <button id="last-button" onclick=latte.chocolate()>Dark Chocolate</button>
         </div>
     
     <script src="./js/main.js"></script>
