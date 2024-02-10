@@ -31,13 +31,13 @@ main h1 {
     font-size: 3rem;
     text-align: center;
     font-weight: bold;
-    text-shadow: 2px 2px #fff;
+    color: white;
     margin-top: 3vh;
 }
 
 main h2 {
     font-size: 1.5rem;
-    margin-top: 5vh;
+    margin-top: 5vh ;
     text-align: center;
 }
 
