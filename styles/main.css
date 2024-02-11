@@ -18,88 +18,83 @@ body {
   background-color: #fff;
 }
 
-main {
+.container {
   height: 80vh;
   width: 80vw;
+  padding: 2.5rem;
 
-  background-color: #85bcfb;
+  background-color: #64b5f6;
   border-radius: 2rem;
   box-shadow: 0.5vw 1vh 45px #000;
-}
 
-main h1 {
-  font-size: 3rem;
-  text-align: center;
-  font-weight: bold;
-  color: white;
-  margin-top: 3vh;
-}
+  .container__title {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  }
 
-main h2 {
-  font-size: 1.5rem;
-  margin-top: 5vh;
-  text-align: center;
-}
+  .container__section-title {
+    font-size: 1.5rem;
+    margin-top: 5vh;
+    text-align: center;
+  }
 
-.latte-buttons,
-.espresso-buttons,
-.chocolate-buttons {
-  width: 70%;
-  margin-left: 15%;
-  display: flex;
-  justify-content: space-evenly;
+  .container__buttons-area {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-evenly;
 
-  margin-top: 3vh;
-}
+    margin-top: 3vh;
 
-main button {
-  text-align: center;
+    .container__button {
+      text-align: center;
 
-  background-color: #fff;
-  border: 2px solid rgb(0, 98, 98);
-  border-radius: 20px;
+      background-color: #fff;
+      border: 2px solid #fff;
+      border-radius: 20px;
 
-  width: 30%;
-  height: 8vh;
-}
+      width: 30%;
+      height: 8vh;
+    }
 
-main button:hover {
-  background-color: #5ccea2;
-}
+    .container__button--milk:hover,
+    .container__button--milk:focus {
+      background-color: #eeeeee;
+    }
 
-.latte-buttons button:focus,
-.espresso-buttons button:focus,
-.chocolate-buttons button:focus {
-  background-color: #5ccea2;
+    .container__button--espresso:hover,
+    .container__button--espresso:focus {
+      background-color: #757575;
+    }
+
+    .container__button--chocolate:hover,
+    .container__button--chocolate:focus {
+      background-color: #a1887f;
+    }
+  }
 }
 
 @media (max-width: 800px) {
   html,
-  main {
+  .container {
+    background-color: #64b5f6;
     height: auto;
     width: 100%;
 
     border-radius: 0;
     box-shadow: none;
-  }
 
-  .latte-buttons,
-  .espresso-buttons,
-  .chocolate-buttons {
-    flex-direction: column;
-    margin-top: 0.3vh;
-  }
+    .container__buttons-area {
+      flex-direction: column;
+      margin-bottom: 4vh;
+      margin-top: 2vh;
 
-  main button {
-    margin-top: 2vh;
-    width: 100%;
-  }
-
-  main h2 {
-    margin-top: 3vh;
-  }
-
-  #last-button {
-    margin-bottom: 7vh;
+      .container__button {
+        margin-top: 2vh;
+        width: 100%;
+      }
+    }
   }
 }
