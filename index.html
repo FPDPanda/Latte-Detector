@@ -13,49 +13,72 @@
       <h2 class="container__section-title">
         What kind of milk are you adding to your latte?
       </h2>
-      <div class="container__buttons-area latte-buttons">
-        <button
-          class="container__button container__button container__button--milk"
-          onclick="latte.selectMilk('Dairy Milk')"
-        >
+      <div class="container__buttons-area" radio="milk">
+        <label class="container__button container__button--milk">
           Dairy Milk
-        </button>
-        <button
-          class="container__button container__button container__button--milk"
-          onclick="latte.selectMilk('Soy Milk')"
-        >
+          <input
+            type="radio"
+            id="Caffeinated Espresso"
+            name="milk"
+            class="container__radio-button"
+            onclick="latte.selectMilk('Dairy Milk')"
+          />
+        </label>
+
+        <label class="container__button container__button--milk">
           Soy Milk
-        </button>
-        <button
-          class="container__button container__button container__button--milk"
-          onclick="latte.selectMilk('Cream')"
-        >
+          <input
+            type="radio"
+            id="Dairy Milk"
+            name="milk"
+            class="container__radio-button"
+            onclick="latte.selectMilk('Soy Milk')"
+          />
+        </label>
+
+        <label class="container__button container__button--milk">
           Cream
-        </button>
+          <input
+            type="radio"
+            id="Cream"
+            name="milk"
+            class="container__radio-button"
+            onclick="latte.selectMilk('Cream')"
+          />
+        </label>
       </div>
 
       <h2 class="container__section-title">
         What kind of espresso are you adding to your latte?
       </h2>
       <div class="container__buttons-area" radio="espresso">
-        <button
-          class="container__button container__button--espresso"
-          onclick="latte.selectEspresso('Caffeinated Espresso')"
-        >
-          Caffeinated
-        </button>
-        <button
-          class="container__button container__button--espresso"
-          onclick="latte.selectEspresso('Decaf Espresso')"
-        >
-          Decaf
-        </button>
+        <label class="container__button container__button--espresso">
+          Caffeinated Espresso
+          <input
+            type="radio"
+            id="Caffeinated Espresso"
+            name="espresso"
+            class="container__radio-button"
+            onclick="latte.selectEspresso('Caffeinated Espresso')"
+          />
+        </label>
+
+        <label class="container__button container__button--espresso">
+          Decaf Espresso
+          <input
+            type="radio"
+            id="Decaf Espresso"
+            name="espresso"
+            class="container__radio-button"
+            onclick="latte.selectEspresso('Decaf Espresso')"
+          />
+        </label>
       </div>
 
       <h2 class="container__section-title">
         Are you adding chocolate as well?
       </h2>
-      <div class="container__buttons-area chocolate-buttons" radio="chocolate">
+      <div class="container__buttons-area">
         <button
           class="container__button container__button--chocolate"
           onclick="latte.chocolate()"
@@ -69,6 +92,8 @@
           Dark Chocolate
         </button>
       </div>
+
+      <div id="container__summary"></div>
 
       <script src="./js/main.js"></script>
     </main>
