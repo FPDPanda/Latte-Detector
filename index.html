@@ -7,26 +7,32 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <main>
-      <h1>Latte Detector</h1>
+    <main class="container">
+      <h1 class="container__title">Latte Detector</h1>
 
-      <h2>What kind of milk are you adding to your latte?</h2>
-      <div class="latte-buttons">
+      <h2 class="container__section-title">
+        What kind of milk are you adding to your latte?
+      </h2>
+      <div class="container__buttons-area latte-buttons">
         <button onclick="latte.selectMilk('Dairy Milk')">Dairy Milk</button>
         <button onclick="latte.selectMilk('Soy Milk')">Soy Milk</button>
         <button onclick="latte.selectMilk('Cream')">Cream</button>
       </div>
 
-      <h2>What kind of espresso are you adding to your latte?</h2>
-      <div class="espresso-buttons" radio="espresso">
+      <h2 class="container__section-title">
+        What kind of espresso are you adding to your latte?
+      </h2>
+      <div class="container__buttons-area espresso-buttons" radio="espresso">
         <button onclick="latte.selectEspresso('Caffeinated Espresso')">
           Caffeinated
         </button>
         <button onclick="latte.selectEspresso('Decaf Espresso')">Decaf</button>
       </div>
 
-      <h2>Are you adding chocolate as well?</h2>
-      <div class="chocolate-buttons" radio="chocolate">
+      <h2 class="container__section-title">
+        Are you adding chocolate as well?
+      </h2>
+      <div class="container__buttons-area chocolate-buttons" radio="chocolate">
         <button onclick="latte.chocolate()">Milk Chocolate</button>
         <button id="last-button" onclick="latte.chocolate()">
           Dark Chocolate
