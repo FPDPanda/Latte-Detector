@@ -4,13 +4,19 @@ var latte = {
 
   selectMilk(milk) {
     this.selectedMilk = milk;
-
-    alert(`You have added ${milk}!`);
+    this.updateSummaryMessage();
   },
   selectEspresso(espresso) {
     this.selectedEspresso = espresso;
-
-    alert(`You have added ${espresso}!`);
+    this.updateSummaryMessage();
+  },
+  updateSummaryMessage() {
+    const summary = document.getElementById("container__summary");
+    if (summary) {
+      summary.innerHTML = `Your latte has ${this.selectedMilk ?? ""}
+      ${this.selectedMilk && this.selectedEspresso ? "and" : ""}
+      ${this.selectedEspresso ?? ""}`;
+    }
   },
   chocolate() {
     alert("If you add chocolate it won't be a latte!");

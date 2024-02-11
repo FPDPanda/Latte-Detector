@@ -48,8 +48,14 @@ body {
 
     margin-top: 3vh;
 
+    .container__radio-button {
+      visibility: hidden;
+    }
+
     .container__button {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       background-color: #fff;
       border: 2px solid #fff;
@@ -60,19 +66,23 @@ body {
     }
 
     .container__button--milk:hover,
-    .container__button--milk:focus {
+    .container__button--milk:has(input:checked) {
       background-color: #eeeeee;
     }
 
     .container__button--espresso:hover,
-    .container__button--espresso:focus {
+    .container__button--espresso:has(input:checked) {
       background-color: #757575;
     }
 
-    .container__button--chocolate:hover,
-    .container__button--chocolate:focus {
+    .container__button--chocolate:hover {
       background-color: #a1887f;
     }
+  }
+
+  #container__summary {
+    position: absolute;
+    bottom: 10%;
   }
 }
 
@@ -95,6 +105,10 @@ body {
         margin-top: 2vh;
         width: 100%;
       }
+    }
+
+    #container__summary {
+      position: relative;
     }
   }
 }
