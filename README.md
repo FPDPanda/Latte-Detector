@@ -5,9 +5,4 @@ Anyone is more than welcome to help me! I made this little website (after about 
 
 LINK: https://fpdpanda.github.io/Latte-Detector/
 
-# Improvements
-
-- Separate the buttons into 3 groups and somehow manage to leave one button from each group selected
-- A message saying which buttons have already been selected (which changes whenever the person clicks on another in the same category)
-
 My slack ID: U01ENJ3CX50
