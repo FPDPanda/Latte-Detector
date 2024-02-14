@@ -1,4 +1,4 @@
-# Latte Maker Game
+# Latte Detector
 
 Welcome to the Latte Detector repository! This project is a fun little web-based game where users can create their own custom latte by choosing between various options for milk, espresso, and whether to add chocolate or not. The project is implemented using JavaScript, HTML, and CSS.
 
